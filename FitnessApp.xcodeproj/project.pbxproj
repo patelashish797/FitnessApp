@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		84D2F387255B9BBB00694198 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D2F386255B9BBB00694198 /* AppDelegate.swift */; };
-		84D2F389255B9BBB00694198 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D2F388255B9BBB00694198 /* SceneDelegate.swift */; };
 		84D2F38B255B9BBB00694198 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D2F38A255B9BBB00694198 /* ViewController.swift */; };
-		84D2F38E255B9BBB00694198 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D2F38C255B9BBB00694198 /* Main.storyboard */; };
 		84D2F390255B9BBE00694198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D2F38F255B9BBE00694198 /* Assets.xcassets */; };
 		84D2F393255B9BBE00694198 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D2F391255B9BBE00694198 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,9 +16,7 @@
 /* Begin PBXFileReference section */
 		84D2F383255B9BBB00694198 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D2F386255B9BBB00694198 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84D2F388255B9BBB00694198 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		84D2F38A255B9BBB00694198 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		84D2F38D255B9BBB00694198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84D2F38F255B9BBE00694198 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84D2F392255B9BBE00694198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84D2F394255B9BBE00694198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,9 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				84D2F386255B9BBB00694198 /* AppDelegate.swift */,
-				84D2F388255B9BBB00694198 /* SceneDelegate.swift */,
 				84D2F38A255B9BBB00694198 /* ViewController.swift */,
-				84D2F38C255B9BBB00694198 /* Main.storyboard */,
 				84D2F38F255B9BBE00694198 /* Assets.xcassets */,
 				84D2F391255B9BBE00694198 /* LaunchScreen.storyboard */,
 				84D2F394255B9BBE00694198 /* Info.plist */,
@@ -126,7 +120,6 @@
 			files = (
 				84D2F393255B9BBE00694198 /* LaunchScreen.storyboard in Resources */,
 				84D2F390255B9BBE00694198 /* Assets.xcassets in Resources */,
-				84D2F38E255B9BBB00694198 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,21 +132,12 @@
 			files = (
 				84D2F38B255B9BBB00694198 /* ViewController.swift in Sources */,
 				84D2F387255B9BBB00694198 /* AppDelegate.swift in Sources */,
-				84D2F389255B9BBB00694198 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		84D2F38C255B9BBB00694198 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84D2F38D255B9BBB00694198 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		84D2F391255B9BBE00694198 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,6 +272,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FitnessApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,7 +280,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ashish.FitnessApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -306,6 +291,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FitnessApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +299,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ashish.FitnessApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
