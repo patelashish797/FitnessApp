@@ -8,18 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		84D2F387255B9BBB00694198 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D2F386255B9BBB00694198 /* AppDelegate.swift */; };
-		84D2F38B255B9BBB00694198 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D2F38A255B9BBB00694198 /* ViewController.swift */; };
+		84D2F38B255B9BBB00694198 /* WorkOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D2F38A255B9BBB00694198 /* WorkOutVC.swift */; };
 		84D2F390255B9BBE00694198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D2F38F255B9BBE00694198 /* Assets.xcassets */; };
 		84D2F393255B9BBE00694198 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D2F391255B9BBE00694198 /* LaunchScreen.storyboard */; };
+		84D2F3A9255C565200694198 /* WorkOutLable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D2F3A8255C565200694198 /* WorkOutLable.swift */; };
+		84D2F3AD255C81DA00694198 /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D2F3AC255C81DA00694198 /* NavigationVC.swift */; };
+		84D2F3B0255C85B200694198 /* WorkOutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D2F3AF255C85B200694198 /* WorkOutCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		84D2F383255B9BBB00694198 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D2F386255B9BBB00694198 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84D2F38A255B9BBB00694198 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84D2F38A255B9BBB00694198 /* WorkOutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutVC.swift; sourceTree = "<group>"; };
 		84D2F38F255B9BBE00694198 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84D2F392255B9BBE00694198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84D2F394255B9BBE00694198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D2F3A8255C565200694198 /* WorkOutLable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutLable.swift; sourceTree = "<group>"; };
+		84D2F3AC255C81DA00694198 /* NavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationVC.swift; sourceTree = "<group>"; };
+		84D2F3AF255C85B200694198 /* WorkOutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,12 +59,55 @@
 			isa = PBXGroup;
 			children = (
 				84D2F386255B9BBB00694198 /* AppDelegate.swift */,
-				84D2F38A255B9BBB00694198 /* ViewController.swift */,
+				84D2F39E255BBA9100694198 /* Resource */,
+				84D2F3A7255C562200694198 /* Extension+Custom */,
+				84D2F39D255BBA7C00694198 /* WorkOut */,
+			);
+			path = FitnessApp;
+			sourceTree = "<group>";
+		};
+		84D2F39D255BBA7C00694198 /* WorkOut */ = {
+			isa = PBXGroup;
+			children = (
+				84D2F3A5255BBBEB00694198 /* ViewController */,
+				84D2F3A1255BBB2A00694198 /* View */,
+			);
+			path = WorkOut;
+			sourceTree = "<group>";
+		};
+		84D2F39E255BBA9100694198 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
 				84D2F38F255B9BBE00694198 /* Assets.xcassets */,
 				84D2F391255B9BBE00694198 /* LaunchScreen.storyboard */,
 				84D2F394255B9BBE00694198 /* Info.plist */,
 			);
-			path = FitnessApp;
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		84D2F3A1255BBB2A00694198 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84D2F3AF255C85B200694198 /* WorkOutCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84D2F3A5255BBBEB00694198 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84D2F38A255B9BBB00694198 /* WorkOutVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		84D2F3A7255C562200694198 /* Extension+Custom */ = {
+			isa = PBXGroup;
+			children = (
+				84D2F3A8255C565200694198 /* WorkOutLable.swift */,
+				84D2F3AC255C81DA00694198 /* NavigationVC.swift */,
+			);
+			path = "Extension+Custom";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,8 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84D2F38B255B9BBB00694198 /* ViewController.swift in Sources */,
+				84D2F3A9255C565200694198 /* WorkOutLable.swift in Sources */,
+				84D2F3B0255C85B200694198 /* WorkOutCell.swift in Sources */,
+				84D2F38B255B9BBB00694198 /* WorkOutVC.swift in Sources */,
 				84D2F387255B9BBB00694198 /* AppDelegate.swift in Sources */,
+				84D2F3AD255C81DA00694198 /* NavigationVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +323,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FitnessApp/Info.plist;
+				INFOPLIST_FILE = FitnessApp/Resource/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FitnessApp/Info.plist;
+				INFOPLIST_FILE = FitnessApp/Resource/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
